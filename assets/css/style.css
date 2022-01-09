@@ -1,0 +1,325 @@
+/* reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* end reset css*/
+
+/* Change font style*/
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* End Change font style*/
+
+/* Common*/
+.mt-16 {
+    margin-top: 16px !important;
+}
+.pt-64 {
+    padding-top: 30px !important;
+}
+
+.text-while {
+    color: #fff !important;
+}
+
+.br {
+    border-radius: 20px !important;
+}
+
+.padding {
+    padding: 64px 16px;
+}
+
+.margin {
+    margin: 5px 5px 5px 5px !important;
+}
+
+.center-element {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#main {
+    padding-top: 39px;
+    background-color: rgba(0, 0, 0, 0.3);   
+    padding-bottom: 5px;
+    
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+
+
+/* End common*/
+
+/*I. Header*/
+#header {
+    background-color: rgb(54, 128, 138);
+    position: fixed;
+    height: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+   
+}
+
+/*1. Navigation*/
+ 
+#navigation {
+    display: inline-block;
+}
+
+#navigation > li{
+    display: inline-block;
+}
+
+#navigation li {
+    position: relative;
+}
+
+#navigation > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#navigation li  a {
+    text-decoration: none;
+    line-height: 34px;
+    padding: 0 20px;
+    display: block;
+    
+}
+
+#navigation li:hover > a {
+    color: #000;
+    background-color: rgb(119, 155, 156);
+    border-radius: 20px;
+
+}
+
+/*1.1 Subnav*/
+#navigation .subnav {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    top: 100%;
+    left: 0;
+    min-width: 102.05px;
+    list-style-type: none;
+    margin-top: 0.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#navigation .subnav a {
+    color: #000;
+    padding: 0 18.375px;
+    line-height: 34px;
+}
+
+#navigation li:hover .subnav {
+    display: block;
+    border-radius: 20px;
+}
+
+#navigation .nav-arrow-down {
+    font-size: 14px;
+}
+/*1.1 End Subnav*/
+/*1. End Navigation*/
+/*I.End Header*/
+
+/*II. Slider*/
+#slider {
+    position: relative;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+}
+
+
+#slider .text-context {
+    position: absolute;
+    color:#fff;
+    bottom: 20%;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 5px #000;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    letter-spacing: 4px;
+}
+/*II. End Slider*/
+
+/*III. Content */
+/*1. Background*/
+
+#background {
+  max-width: 100%;
+  background-color: #fff;
+  
+}
+
+#background .avatar {
+    margin-top: 25px;
+}
+
+
+
+#background .min-max-width-avatar {
+    max-width: 200px;
+    min-width: 150px;
+    width: 100%;
+}
+
+
+#background .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 440px;
+}
+ 
+/*1. End Background*/
+/*2. Contact*/
+#contact {
+    background-color: #fff;
+}
+
+#contact .contact-icon {
+    max-width: 540px;
+    padding-top: 60px;
+    list-style-type: none;
+}
+
+#contact .contact-icon li {
+    display: inline-block;
+}
+
+#contact .contact-icon li i {   
+    padding: 16px;
+    color: rgb(18, 67, 73);
+    font-size: 20px;
+}
+
+
+#contact .contact-icon li i a{
+    text-decoration: none;
+    color: rgb(18, 67, 73);
+    padding: 16px 0;
+    list-style-position: none;
+}
+
+#contact .contact-icon i:hover {
+    opacity: 0.7;
+}
+
+
+
+/*2. End Contact*/
+/*3. Photo*/
+
+ 
+#content .photo {
+    background-color: rgb(137, 161, 161);
+}
+
+#content .min-max-width-img {
+    max-width: 350px;
+    min-width: 150px;
+    width: 100%;
+}
+
+.landscape-list1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content .landscape-list1 {
+    margin: 32px 32PX 0 32px;
+}
+
+#content .landscape-list1 p {
+    float: left;
+    padding: 0 16px;
+    width: 33.333333%;
+}
+/*3. End Photo*/
+/*4. Map*/
+
+.map {
+    padding-top: 50%;
+    background: url(/assets/img/map/map1.jpg) top center / cover no-repeat;
+}
+
+
+/*4. End Map*/
+
+
+/*III. End Content */
+
+/*Footer*/
+#footer {
+    text-align: center;
+    background-color: #fff;
+    
+   
+}
+
+#footer .socials-list {
+   
+    font-size: 24px;
+    
+}
+
+#footer .socials-list a {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    margin: 5px;
+}
+    
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0,0,0,1);
+}
+
+#footer .copyright,
+#footer .copyright a{
+    color: rgb(0, 0, 0,0.6);
+
+}
+
+
+
+/*End Footer*/
+
+
+
+
+
